@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_add_user_photo"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_User_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/_1sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_user_pic"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:strokeColor="@color/colorPrimaryDark"
+                    app:strokeWidth="@dimen/_2sdp" />
+
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdateImage"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Update Profile Pic"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/white"/>
+
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:padding="@dimen/_16sdp"
+                android:drawableStart="@drawable/round_edit_24"
+                android:background="@drawable/bg_edittext"
+                android:hint="Name"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="@color/colorSecondaryText"
+                android:drawablePadding="@dimen/_12sdp"
+                android:inputType="text"
+                android:textSize="@dimen/_14ssp"/>
+
+<!--            <EditText-->
+<!--                android:id="@+id/edtEmail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="@dimen/_13sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:padding="@dimen/_16sdp"-->
+<!--                android:drawableStart="@drawable/round_alternate_email_24"-->
+<!--                android:background="@drawable/bg_edittext"-->
+<!--                android:hint="Email ID"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/colorPrimaryText"-->
+<!--                android:textColorHint="@color/colorSecondaryText"-->
+<!--                android:drawablePadding="@dimen/_12sdp"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:textSize="@dimen/_14ssp"/>-->
+            <EditText
+                android:id="@+id/edtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_16sdp"
+                android:drawableStart="@drawable/round_call_24"
+                android:background="@drawable/bg_edittext"
+                android:hint="Mobile Number"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="@color/colorSecondaryText"
+                android:drawablePadding="@dimen/_12sdp"
+                android:inputType="number"
+                android:textSize="@dimen/_14ssp"/>
+
+            <EditText
+                android:id="@+id/edtDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_16sdp"
+                android:drawablePadding="@dimen/_12sdp"
+                android:drawableStart="@drawable/round_calendar_today_24"
+                android:background="@drawable/bg_edittext"
+                android:hint="Date of Birth"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_male"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_male" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Male"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_marginTop="@dimen/_6sdp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_female"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_female" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Female"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_marginTop="@dimen/_6sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/bg_button"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/thankyou" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Thank You !"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/_26sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Your Appointment Booked Successfully"
+        android:textColor="@color/colorPrimaryText"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp" />
+    <TextView
+        android:id="@+id/tv_appointmentDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Your appointment booked successfully, wait for doctor confirmation."
+        android:textColor="@color/colorSecondaryText"
+        android:gravity="center"
+        android:textSize="@dimen/_13sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_50sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/white"/>
+</LinearLayout>
