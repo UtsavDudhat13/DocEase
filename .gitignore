@@ -1,6 +1,3 @@
 # Project exclude paths
 /.gradle/
-/docs/Mini Project Docs.docx
-/docs/Daily Worksheet.pdf
-/docs/Presentation.pptx
-/docs/Mini Project Docs.pdf
+/docs/
