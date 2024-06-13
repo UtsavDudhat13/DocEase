@@ -16,7 +16,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
     LinearLayout ll_shareApp;
     LinearLayout ll_RateUs;
-
+// this is sample
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
